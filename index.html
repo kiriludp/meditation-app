@@ -6,15 +6,16 @@
     <link rel="stylesheet" href="./assets/style.css">
     <title>Meditation App for Your Nerves</title>
 </head>
-<body>
 
+<body>
 
     <div class="app">
         <div class="vid-container">
           <video loop >
-            <source src="./assets/video/rain.mp4"  type="video/mp4">
+            <source src="./assets/video/night.mp4"  type="video/mp4">
           </video>
         </div>
+        
         <div class="time-select">
             <button data-time="120">2 Minutes</button>
             <button data-time="300" class="medium-mins">5 Minutes</button>
@@ -22,32 +23,47 @@
           </div>
         <div class="player-container">
             <audio class="song">
-                <source src="./assets/sounds/rain.mp3" />
+                <source src="./assets/sound/campfire.mp3" />
             </audio>
-            <img src="./assets/imgs/play.svg" class="play"></img>
+            <img src="./assets/imgs/play.svg" class="play" alt="play"></img>
             
-            <svg class="track-outline" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="track-outline" width="453" height="453" viewBox="0 0 453 453"  fill="none" xmlns="http://www.w3.org/2000/svg">
 
                 <circle cx="226.5" cy="226.5" r="216.5" stroke="white" stroke-width="20"/>
 
             </svg>
 
-            <svg class="moving-outline" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="moving-outline" width="453" height="453" viewBox="0 0 453 453"  fill="none" xmlns="http://www.w3.org/2000/svg">
 
                 <circle cx="226.5" cy="226.5" r="216.5" stroke="#018EBA" stroke-width="20"/>
 
             </svg>
 
-            <img src="./assets/imgs/replay.svg" class="replay"></img>
+            <img src="./assets/imgs/replay.svg" class="replay" style="margin-top: 200px;"></img>
 
             <h3 class="time-display">0:00</h3>
-        </div>
-        <div class="sound-picker">
-            <button data-sound="./assets/sound/rain.mp3" data-video="./assets/video/rain.mp4"><img src="./assets/imgs/rain.jpg" alt="rain" class="rain" /> </button>
+            </div>
+            
+            
 
-            <button data-sound="./assets/sound/beach.mp3" data-video="./assets/video/beach.mp4"><img src="./assets/imgs/beach.jpg" alt="beach" class="beach" /> </button>
+           
+        
+
+        <div class="sound-picker">
+
+            <button data-sound="./assets/sound/campfire.mp3" data-video="./assets/video/campfire.mp4"><img src="./assets/imgs/campfire.svg" alt="campfire" class="campfire" /> </button>
+
+            <button data-sound="./assets/sound/night.mp3" data-video="./assets/video/night.mp4"><img src="./assets/imgs/night.svg" alt="night sky" class="night" /> </button>
+
+            <button data-sound="./assets/sound/storm.mp3" data-video="./assets/video/storm.mp4"><img src="./assets/imgs/night.svg" alt="storm cloud" class="storm" /> </button>
+
+            <button data-sound="./assets/sound/wind.mp3" data-video="./assets/video/wind.mp4"><img src="./assets/imgs/windy.svg" alt="blowing wind" class="windy" /> </button>
+
+
         </div>
     </div>
+        
+ 
 
 
     <script src="./script.js"></script>
